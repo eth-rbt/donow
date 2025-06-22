@@ -12,6 +12,7 @@ body {
     color: #ffffff;
     line-height: 1.5;
     overflow-x: hidden;
+    font-size: 1.1rem;
 }
 
 /* Demo Phones Side by Side */
@@ -133,21 +134,21 @@ body {
 }
 
 .hero-content h1 {
-    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-size: clamp(3.8rem, 6.5vw, 5.3rem);
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #a0a0a0;
     margin-bottom: 1rem;
     font-weight: 400;
 }
 
 .hook {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #ff6b6b;
     margin-bottom: 1.5rem;
     font-weight: 600;
@@ -155,7 +156,7 @@ body {
 
 .hero-description {
     color: rgba(255,255,255,0.8);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 2.5rem;
 }
 
@@ -167,7 +168,7 @@ body {
     color: #000000;
     padding: 16px 32px;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -259,12 +260,12 @@ body {
 }
 
 .chat-info h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
 .chat-info p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: #666666;
 }
 
@@ -278,7 +279,7 @@ body {
     max-width: 80%;
     padding: 12px 16px;
     border-radius: 16px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     animation: fadeInUp 0.6s ease-out;
 }
 
@@ -354,7 +355,7 @@ body {
 
 .warning-text {
     color: #ffaa00;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     max-width: 800px;
     margin: 0 auto;
@@ -367,7 +368,7 @@ body {
 }
 
 .features h2 {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-size: clamp(2.7rem, 4.5vw, 3.7rem);
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 700;
@@ -427,14 +428,14 @@ body {
 }
 
 .feature-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     margin-bottom: 0.75rem;
     font-weight: 600;
 }
 
 .feature-card p {
     color: #a0a0a0;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     line-height: 1.5;
 }
 
@@ -445,7 +446,7 @@ body {
 }
 
 .section-title {
-    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-size: clamp(2.7rem, 4.5vw, 3.7rem);
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 700;
@@ -484,7 +485,7 @@ body {
 }
 
 .personality-name {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -492,7 +493,7 @@ body {
 .personality-card p {
     color: #a0a0a0;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -526,7 +527,7 @@ body {
     padding: 12px 16px;
     border-radius: 18px;
     margin-bottom: 12px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     opacity: 0;
     animation: fadeInUp 0.6s ease-out forwards;
     max-width: 90%;
@@ -596,20 +597,20 @@ body {
 }
 
 .pricing-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
 
 .price {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
 }
 
 .price-period {
     color: #666666;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -622,7 +623,7 @@ body {
 .features-list li {
     padding: 0.5rem 0;
     color: #a0a0a0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .features-list li::before {
@@ -639,7 +640,7 @@ body {
     padding: 12px 24px;
     border: 1px solid #333333;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease;
@@ -674,7 +675,7 @@ body {
 
 .footer p {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /* Shake Animation */
@@ -736,7 +737,7 @@ body {
     }
 
     .warning-text {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0 1rem;
     }
 } 
