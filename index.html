@@ -3,127 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoNow - Transform Your Ideas</title>
+    <title>Do Now - The Accountability Coach That Actually Works</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header with animated background -->
-        <header class="header">
-            <div class="animated-bg"></div>
-            <nav class="nav">
-                <div class="logo">
-                    <i class="fas fa-rocket"></i>
-                    <span>DoNow</span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Main content section -->
-        <main class="main-content">
-            <!-- Hero section with tagline -->
-            <section class="hero">
+    <div class="floating-emojis" id="floatingEmojis"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
                 <div class="hero-content">
-                    <h1 class="tagline">
-                        <span class="gradient-text">Transform Your Ideas</span>
-                        <br>
-                        <span class="subtitle">Into Reality Today</span>
-                    </h1>
+                    <h1>Do Now</h1>
+                    <p class="hero-subtitle">Your Digital Accountability Coach</p>
+                    <h2 class="hook">This bot WILL text your mom.</h2>
                     <p class="hero-description">
-                        The ultimate platform for turning your dreams into actionable steps. 
-                        Start your journey with just one number.
+                        Finally, a goal tracker with real consequences. Choose your personality, set your stakes, and watch social pressure work its magic.
                     </p>
-                    
-                    <!-- Number input section -->
-                    <div class="input-section">
-                        <div class="input-container">
-                            <label for="numberInput" class="input-label">Enter Your Starting Number</label>
-                            <div class="input-wrapper">
-                                <input 
-                                    type="number" 
-                                    id="numberInput" 
-                                    class="number-input" 
-                                    placeholder="Enter a number..."
-                                    min="1"
-                                >
-                                <button class="submit-btn" onclick="handleSubmit()">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
+                    <button class="cta-button" onclick="startShake()">
+                        <span>Start Embarrassing Yourself</span>
+                        <span>→</span>
+                    </button>
+                </div>
+                
+                <div class="chat-demo">
+                    <div class="chat-header">
+                        <div class="chat-avatar">🤖</div>
+                        <div class="chat-info">
+                            <h3>Rick (Brutal Mode)</h3>
+                            <p>Your accountability coach</p>
+                        </div>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message bot">How'd the gym go today?</div>
+                        <div class="message user">I didn't make it... got caught up with work</div>
+                        <div class="message bot">Classic excuse. Your mom's getting a text.</div>
+                        <div class="message bot">📱 "Hi Mrs. Johnson, your son skipped the gym again. Thought you should know. - Rick"</div>
+                        <div class="message typing">
+                            <div class="typing-dots">
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
+                                <div class="typing-dot"></div>
                             </div>
-                            <div class="input-feedback" id="inputFeedback"></div>
+                            <span style="margin-left: 8px;">Rick is typing...</span>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Features section with three pictures -->
-            <section class="features">
-                <h2 class="section-title">Why Choose DoNow?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-image">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Speed and Efficiency">
-                        </div>
-                        <h3>Lightning Fast</h3>
-                        <p>Get results instantly with our optimized platform designed for speed and efficiency.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-image">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Analytics and Insights">
-                        </div>
-                        <h3>Smart Analytics</h3>
-                        <p>Advanced insights and analytics to help you make data-driven decisions.</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-image">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Collaboration">
-                        </div>
-                        <h3>Team Collaboration</h3>
-                        <p>Work together seamlessly with powerful collaboration tools and real-time updates.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+    <!-- Warning Section -->
+    <section class="warning-section">
+        <div class="container">
+            <p class="warning-text">
+                ⚠️ WARNING: This app will actually contact your friends and family. It will post on your social media. 
+                There's no backing down once you're in Hardcore Mode. You've been warned.
+            </p>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>DoNow</h4>
-                    <p>Transforming ideas into reality, one step at a time.</p>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon" style="--delay: 0s">🎯</span>
+                    <h3>Smart Goal Tracking</h3>
+                    <p>Set any goal - gym visits, study time, creative projects. We'll track your progress and hold you accountable when you slip.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                <div class="feature-card">
+                    <span class="feature-icon" style="--delay: 0.2s">📱</span>
+                    <h3>Social Pressure Engine</h3>
+                    <p>Miss a goal? We'll text your mom, roast you in group chats, or post embarrassing content. Your choice of consequence level.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" style="--delay: 0.4s">🎭</span>
+                    <h3>Personality Modes</h3>
+                    <p>Choose your coach: Supportive friend, brutal roaster, or guilt-tripping mom mode. Each one gets results differently.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" style="--delay: 0.6s">🔥</span>
+                    <h3>Hardcore Mode</h3>
+                    <p>For the brave: Public tweets, Instagram stories, and social media posts when you fail. Maximum accountability, maximum results.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" style="--delay: 0.8s">🛡️</span>
+                    <h3>Panic Button</h3>
+                    <p>5-second window to cancel any social action. We're mean, but we're not monsters. (Usually.)</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon" style="--delay: 1s">📊</span>
+                    <h3>Progress Dashboard</h3>
+                    <p>Track streaks, success rates, and total embarrassments avoided. See how social pressure transforms your habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalities Section -->
+    <section class="personalities-section">
+        <div class="container">
+            <h2 class="section-title">Choose Your Poison</h2>
+            <div class="personalities-grid">
+                <div class="personality-card">
+                    <div class="personality-emoji">🤗</div>
+                    <h3 class="personality-name">Supportive Coach</h3>
+                    <p>"You've got this! Just a gentle reminder that your goals are waiting for you. 💪"</p>
+                </div>
+                <div class="personality-card">
+                    <div class="personality-emoji">🔥</div>
+                    <h3 class="personality-name">Brutal Roaster</h3>
+                    <p>"Wow, another day of Netflix instead of the gym? Your couch must be so proud of your commitment. 🍿"</p>
+                </div>
+                <div class="personality-card">
+                    <div class="personality-emoji">👵</div>
+                    <h3 class="personality-name">Mom Mode</h3>
+                    <p>"I'm not angry, I'm just disappointed. Your mother didn't raise a quitter... or did she? 😔"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 class="section-title" style="color: #333;">See It In Action</h2>
+            <div class="demo-phone">
+                <div class="demo-screen">
+                    <div class="message-bubble" style="animation-delay: 1s;">
+                        Hey lazy! You missed gym day #3 this week 🏋️‍♀️
+                    </div>
+                    <div class="message-bubble" style="animation-delay: 2s;">
+                        Time to text your mom about your "commitment issues" 📱
+                    </div>
+                    <div class="message-bubble" style="animation-delay: 3s;">
+                        Or... you could just go to the gym right now? 🤔
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Commitment Level</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Free Tier</h3>
+                    <div class="price">$0</div>
+                    <p class="price-period">Forever</p>
+                    <ul class="features-list">
+                        <li>Basic accountability</li>
+                        <li>1 emergency contact</li>
+                        <li>Supportive mode only</li>
+                        <li>Basic progress tracking</li>
                     </ul>
+                    <button class="pricing-button">Start Free</button>
                 </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
+                <div class="pricing-card featured">
+                    <h3>Premium</h3>
+                    <div class="price">$9.99</div>
+                    <p class="price-period">per month</p>
+                    <ul class="features-list">
+                        <li>All personality modes</li>
+                        <li>Full social integrations</li>
+                        <li>Hardcore Mode unlocked</li>
+                        <li>Unlimited contacts</li>
+                        <li>Custom roast bank</li>
+                    </ul>
+                    <button class="pricing-button">Get Premium</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Team Mode</h3>
+                    <div class="price">$29.99</div>
+                    <p class="price-period">per month</p>
+                    <ul class="features-list">
+                        <li>Everything in Premium</li>
+                        <li>Team accountability</li>
+                        <li>Group challenges</li>
+                        <li>Team leaderboards</li>
+                        <li>Bulk embarrassment</li>
+                    </ul>
+                    <button class="pricing-button">Get Team Mode</button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 DoNow. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Do Now. Making accountability embarrassing since forever.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Floating emojis animation
+        function createFloatingEmoji() {
+            const emojis = ['💪', '🔥', '🎯', '📱', '🏋️‍♀️', '📚', '🎨', '💻'];
+            const emoji = document.createElement('div');
+            emoji.className = 'floating-emojis';
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 100 + 'vw';
+            emoji.style.animationDuration = (Math.random() * 3 + 3) + 's';
+            document.body.appendChild(emoji);
+            
+            setTimeout(() => {
+                document.body.removeChild(emoji);
+            }, 6000);
+        }
+
+        setInterval(createFloatingEmoji, 2000);
+
+        // Shake animation for CTA button
+        function startShake() {
+            const button = document.querySelector('.cta-button');
+            button.style.animation = 'shake 0.5s ease-in-out';
+            setTimeout(() => {
+                button.style.animation = '';
+            }, 500);
+        }
+    </script>
 </body>
-</html> 
+</html>

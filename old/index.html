@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoNow - Transform Your Ideas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with animated background -->
+        <header class="header">
+            <div class="animated-bg"></div>
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>DoNow</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main content section -->
+        <main class="main-content">
+            <!-- Hero section with tagline -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="tagline">
+                        <span class="gradient-text">Transform Your Ideas</span>
+                        <br>
+                        <span class="subtitle">Into Reality Today</span>
+                    </h1>
+                    <p class="hero-description">
+                        The ultimate platform for turning your dreams into actionable steps. 
+                        Start your journey with just one number.
+                    </p>
+                    
+                    <!-- Number input section -->
+                    <div class="input-section">
+                        <div class="input-container">
+                            <label for="numberInput" class="input-label">Enter Your Starting Number</label>
+                            <div class="input-wrapper">
+                                <input 
+                                    type="number" 
+                                    id="numberInput" 
+                                    class="number-input" 
+                                    placeholder="Enter a number..."
+                                    min="1"
+                                >
+                                <button class="submit-btn" onclick="handleSubmit()">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="input-feedback" id="inputFeedback"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features section with three pictures -->
+            <section class="features">
+                <h2 class="section-title">Why Choose DoNow?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Speed and Efficiency">
+                        </div>
+                        <h3>Lightning Fast</h3>
+                        <p>Get results instantly with our optimized platform designed for speed and efficiency.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Analytics and Insights">
+                        </div>
+                        <h3>Smart Analytics</h3>
+                        <p>Advanced insights and analytics to help you make data-driven decisions.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" alt="Collaboration">
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Work together seamlessly with powerful collaboration tools and real-time updates.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DoNow</h4>
+                    <p>Transforming ideas into reality, one step at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DoNow. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
